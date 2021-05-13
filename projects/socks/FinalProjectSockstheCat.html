@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Socks Campaign</title>
+
+    <style>
+
+    body {
+        background:#c7d6f0;
+        max-width: 400px;
+        margin: auto;}
+    h1, h2, h3, button {
+        text-align: center;
+        align-items: center;
+        padding: 0px 0px;
+        margin: auto} 
+    h2, h3 {
+        font-family: Copperplate;
+        font-weight: normal;
+        color: #08093a;
+        margin: 0px 0px;}
+    button, .mainImage, .subImage {
+        box-shadow: 0px 0px 25px #2a2b55;
+        border:2px solid #08093a;}
+    p, button {
+        font-family: monospace;
+        color: #08093a;}
+    .listImages, .ilistImagesLI {
+        align-items: center;
+        display: inline;}
+    .center, .footer {
+        text-align: center;}
+    .listImagesLI, .subImage {
+        display: inline;}
+
+    h1 {
+        font-size: 48px;
+        color: #FFFFFF;
+        font-family: Impact;
+        line-height: 48px;
+        margin: 50px 0px 10px;
+        -webkit-text-stroke: 1px #08093a;
+        text-shadow: 5px 5px 3px #2a2b55;}
+    h2 {
+        font-size: 20px;}
+    h3 {
+        font-size: 16px;
+        border-radius: 1px;
+        border: 1px solid #c7d6f0;
+        transition: all 150ms ease-in-out;}
+    button {
+        display: block;
+        align-items: center;
+        padding: 15px 25px;
+        font-weight: bolder;
+        font-size: 14px;
+        background:#FFFFFF;
+        transition: all 175ms ease-in-out;
+        border-radius: 20px;}
+
+    h3:hover{
+        background:#ececc8;
+        border: 1px solid #08093a;
+        border-radius: 1px;}
+    button:hover{
+        color:#FFFFFF;
+        background:#08093a;}
+    
+    .listImages{
+        list-style: none;
+        margin: auto;}
+    .mainImage {
+        border: 3px solid #08093a;
+        border-radius: 10px;
+        width: 400px;}
+    .subImage{
+        margin: 0px 0px; padding: 0px 0px;
+        height: 75px; width: 100px;
+        border-radius: 15px;
+        align-items: center;}
+    .footer {
+        font-size: 10px;
+        line-height: 20px;}
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>
+        Socks for President
+    </h1> 
+
+        <h2>
+            the <strong><em>purrr</em></strong>-fect candidate
+        </h2>
+        
+        <br />
+
+        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2009%2F02%2Fsocks.jpg&q=85" class = "mainImage">
+
+        <br />
+        <br />
+
+        <p><strong>Notable Socks Facts:</strong></p>
+        <ul>
+            <li> 
+                <p>Born in Little-Rock, Arkansas c.1989, Socks is a family-oriented, domestic short-hair who is 
+                used to friendly tussles with his brother, Buddy.</p>
+            </li>
+            <li>
+                <p>Socks has served as Arkasas's First Cat from 1991-1992, as well as, 
+                First Cat of the White House from 1993-2001.</p>
+            </li>
+            <li>
+                <p>He's the inspiration to the clothing brand Soccx and starred in such books as <em>Socks Goes to 
+                Washington</em>; he's even been interviewed by Kermit the Frog on the Larry King Show!</p>
+            </li>
+        </ul>
+        <br/>
+        <h3>Socks has the experience, the notariaty, and &nbsp; the 
+            <em><strong>CAT</strong></em>-itude to be your next President!</h3>
+        
+        <br />
+        <br />
+
+            <ul class = "listImages">
+                 <li class = "listImagesLI">   
+                     <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/005/852/original/EasterSocks.jpg?1616258056" 
+                       class = "subImage" alt="Easter Socks">
+                </li>
+
+                <li class = "listImagesLI">
+                    <img src= "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/005/853/original/LoungingSocks.jpg?1616258066"
+                      class="subImage" alt="Lounging Socks">
+                </li>
+
+                <li class = "listImagesLI">
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/005/854/original/ChristmasSocks.jpeg?1616258373"
+                      class="subImage" alt="Christmas Socks">
+                </li>
+            </ul>
+
+        <br />
+
+                <p class = "center">
+                    Want to know more about Socks? </br>
+                    Check out his official <a href="https://www.presidentialpetmuseum.com/pets/socks/" target="_blank">Presidential Pet Page!</a>
+                </p>
+   
+        <br />
+
+                <button>Support Socks!</button>
+
+        <br />     
+        <hr />        
+                <p class= "footer">
+                    Coded by Alyson Felton
+
+                 <br/>
+                 <strong>💙 REST IN PEACE SOCKS 1989-2009 💙 </strong>
+                </p>
+
+<script>
+
+function getName() {
+    let nameFirst = prompt("What is your name?")
+    nameFirst = nameFirst.trim()
+    nameFirst = nameFirst.charAt(0).toUpperCase() + nameFirst.slice(1)
+    let updateHeader1 = document.querySelector("h1") 
+    updateHeader1.innerHTML = `Thank you, ${nameFirst}!` 
+}
+
+function getEmail() {
+    let emailUser = prompt("What is your email?")
+}
+
+function getAge(){
+    let ageUser = prompt("How old are you?")
+    let updateHeader2 = document.querySelector("h2")
+    if (ageUser >= 18) {
+        updateHeader2.innerHTML = `We'll be in Touch Soon! <br> Stay <em><strong>PAWS</strong></em>-itive!`
+    } else {
+        updateHeader2.innerHTML = `Please Visit Us Again When You're 18! <br> Stay <em><strong>PAWS</strong></em>-itive!`
+    }
+}
+
+function getInfo() {
+    getName()
+    getEmail()
+    getAge()
+}
+
+let clickButton = document.querySelector("button")
+clickButton.addEventListener("click", getInfo)
+
+</script>
+
+</body>
+</html>

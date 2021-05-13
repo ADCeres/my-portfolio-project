@@ -35,7 +35,7 @@
       <div class="container-fluid">
         <a class="navbar-brand logo-fix" href="/index.html">AMFX</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler align-right"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -60,11 +60,39 @@
                 >About</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link navbar-styling navbutton" href="/projects.html"
-                >Project</a
+            <li class="nav-item dropdown navbar-styling navbutton">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/projects/socks/FinalProjectSockstheCat.html"
+                    >Socks for President</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/projects/weather/index.html"
+                    >Weather App</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="/index.html#project-link"
+                    >All Projects</a
+                  >
+                </li>
+              </ul>
             </li>
+
             <li class="nav-item">
               <a class="nav-link navbar-styling navbutton" href="/blog.html"
                 >Blog</a
@@ -75,43 +103,67 @@
       </div>
     </nav>
     <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
+      <div class="row pt-4 mb-5">
+        <div class="col-md-7">
+          <br />
           <h1>Alyson Felton</h1>
           <h2>Front-End Designer from the United States</h2>
+          <p class="shade">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+            eos eveniet alias temporibus deserunt veritatis minima fugiat
+            explicabo eum dolore.
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-5">
           <img
-            class="img-fluid profile-pic mx-auto d-block"
-            src="/img/ava2.jpg"
+            class="img-fluid profile-pic mx-auto d-block mt-4"
+            src="/img/ava3.jpg"
           />
         </div>
       </div>
-      <hr class="hr-new" />
-      <h2>project list</h2>
+      <hr id="project-link" class="hr-new" />
+      <h3>PROJECTS:</h3>
+      <br />
       <div class="row">
-        <div class="col-sm-4">
-          <img
-            class="img-fluid mx-auto d-block project-pic"
-            src="/img/ava2.jpg"
-          />
+        <div class="col-6 text-center">
+          <img class="img-fluid rounded project-pic-two" src="/img/sox.png" />
         </div>
-        <div class="col-sm-4">
-          <img
-            class="img-fluid mx-auto d-block project-pic"
-            src="/img/ava2.jpg"
-          />
+        <div class="col-sm-6 text-center shade">
+          <h5 class="mb-2">Sock's For President</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+            eos eveniet alias temporibus deserunt veritatis minima fugiat.
+          </p>
+          <br />
+          <a href="#" class="app-link">Launch Compaign</a>
         </div>
-        <div class="col-sm-4">
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm-6 text-center shade">
+          <h5 class="mb-2">My Weather App</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+            eos eveniet alias temporibus deserunt veritatis minima fugiat.
+          </p>
+          <br />
+          <a href="#" class="app-link">Launch Weather App</a>
+        </div>
+        <div class="col-6 text-center">
           <img
-            class="img-fluid mx-auto d-block project-pic"
-            src="/img/ava2.jpg"
+            class="img-fluid rounded project-pic-two"
+            src="/img/weather.png"
           />
         </div>
       </div>
+
       <hr class="hr-new" />
-      <h2>Have a Project You Want Coded?</h2>
-      <button>Contact Me</button>
+      <h4>Have a Project You Want Coded?</h4>
+      <button class="contact-me">Contact Me</button>
       <br />
       <br />
       <br />
