@@ -12,9 +12,9 @@ body {
   margin: 0px auto;
   margin-top: 15px;
   margin-bottom: 15px;
-  width: 75%;
+  width: 100%;
   opacity: 100%;
-  border-radius: 15px;
+  border-radius: 1px;
 }
 
 .logo-fix {
@@ -36,6 +36,30 @@ body {
   color: #4b474e;
 }
 
+.profile-container {
+  max-height: 350px;
+  border: 8px solid white;
+  padding: 25px;
+}
+
+@media (max-width: 768px) {
+  .navbar-styling:hover {
+    background: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .small-screen-pic {
+    display: none;
+  }
+}
+
+.row-container {
+  max-height: 400px;
+  border: 8px solid white;
+  padding: 25px;
+}
+
 h1 {
   color: #fff;
   font-family: "Zilla Slab";
@@ -54,13 +78,7 @@ h2 {
 }
 
 .profile-pic {
-  border: 1px solid #1c1025;
-  border-radius: 5px;
-  max-width: 100%;
-  max-height: 100%;
-  box-shadow: 0px 0px 25px rgb(221, 171, 236);
-  display: flex;
-  justify-content: center;
+  max-width: 300px;
 }
 
 .contact-me {
@@ -72,6 +90,7 @@ h2 {
   transition: all 150ms ease;
   display: block;
   margin: 0px auto;
+  margin-top: 5px;
 }
 
 .contact-me:hover {
@@ -79,6 +98,12 @@ h2 {
   border-radius: 5px;
   color: #fff;
   border: 1px solid #fff;
+}
+
+.static-height {
+  max-height: 350px;
+  border: 8px solid white;
+  padding-bottom: 25px;
 }
 
 p {
@@ -90,7 +115,7 @@ p {
 }
 
 .container {
-  max-width: 750px;
+  max-width: 7680px;
   margin: 0px auto;
   padding: 0px auto;
 }
@@ -101,22 +126,31 @@ p {
 }
 
 h3 {
-  color: rgb(221, 171, 236);
+  color: #fff;
+  background: #1c1025;
+  font-family: "Reggae One";
+  font-size: 38px;
+  font-weight: bold;
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  border: 3px solid white;
+}
+
+h4 {
+  color: #fff;
+  background: #1c1025;
   font-family: "Zilla Slab";
   font-size: 24px;
   font-weight: bold;
   padding-top: 15px;
-  margin-left: 45px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-
-h4 {
-  color: rgb(221, 171, 236);
-  font-family: "Zilla Slab";
-  font-size: 24px;
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  border: 3px solid white;
 }
 
 .project-text {
@@ -127,17 +161,17 @@ h4 {
   font-weight: bold;
   background: rgb(221, 171, 236);
   border-radius: 5px;
-  box-shadow: 0px 0px 5px #1c1025;
+  box-shadow: 0px 0px 3px #1c1025;
   color: #1c1025;
 }
 
 .shade {
-  background: rgb(221, 171, 236);
+  background: rgb(230, 216, 172);
   border: 1px solid #1c1025;
-  color: #1c1025;
+  color: #242510;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px #fff;
   padding: 15px 15px;
+  height: 150px;
 }
 
 button:hover {
@@ -150,7 +184,7 @@ button:hover {
 .project-pic-two {
   border: 1px solid #1c1025;
   border-radius: 15px;
-  box-shadow: 0px 0px 15px rgb(221, 171, 236);
+  box-shadow: 0px 0px 3px rgb(221, 171, 236);
 }
 
 h5 {
@@ -177,6 +211,7 @@ h5 {
   max-width: 75%;
   color: #1c1025;
   background: #fff;
+  box-shadow: 0px 0px 3px #1c1025;
 }
 
 .app-link:hover {
@@ -184,4 +219,12 @@ h5 {
   border-radius: 5px;
   color: #fff;
   border: 1px solid #fff;
+}
+
+.row-text-side {
+  background: rgb(230, 216, 172);
+  border: 1px solid #1c1025;
+  color: #242510;
+  border-radius: 5px;
+  padding: 15px 15px;
 }
