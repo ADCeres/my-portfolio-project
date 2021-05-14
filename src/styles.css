@@ -281,3 +281,8 @@ button:hover {
     display: none;
   }
 }
+
+.git {
+  color: #fff;
+  text-align: center;
+}
