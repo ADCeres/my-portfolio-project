@@ -46,6 +46,10 @@ body {
   .navbar-styling:hover {
     background: none;
   }
+
+  h1.name-design {
+    font-size: 45px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -290,4 +294,30 @@ h5 {
   margin: 0px auto;
   padding: 10px;
   text-decoration: none;
+}
+
+.button-center {
+  margin: 0px auto;
+  text-align: center;
+  align-items: center;
+}
+
+.contact-me-footer {
+  border: 1px solid #1c1025;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-family: "Reggae One";
+  font-size: 18px;
+  transition: all 150ms ease;
+  display: block;
+  margin: 0px auto;
+  margin-top: 5px;
+  width: 225px;
+  background: rgb(230, 216, 172);
+}
+
+.contact-me-footer:hover {
+  background: #1c1025;
+  border-radius: 5px;
+  border: 1px solid #fff;
 }
